@@ -22,6 +22,8 @@ using Papercut.Core.Domain.Settings;
 
 namespace Papercut.Service.Infrastructure.Servers
 {
+    using ILogger = Serilog.ILogger;
+
     public class SmtpServerManager : IEventHandler<SmtpServerBindEvent>, IEventHandler<PapercutServiceReadyEvent>
     {
         private readonly ILogger _logger;

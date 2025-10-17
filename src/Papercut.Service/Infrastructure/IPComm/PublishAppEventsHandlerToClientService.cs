@@ -17,6 +17,8 @@
 
 namespace Papercut.Service.Infrastructure.IPComm;
 
+using ILogger = Serilog.ILogger;
+
 public class PublishAppEventsHandlerToClientService(
     PapercutIPCommClientFactory ipCommClientFactory,
     ILogger logger) : IEventHandler<PapercutServiceExitEvent>,

@@ -22,6 +22,8 @@ using Papercut.Infrastructure.IPComm.Network;
 
 namespace Papercut.Service.Infrastructure.Servers
 {
+    using ILogger = Serilog.ILogger;
+
     public class PapercutServerHostedService(
         PapercutIPCommServer ipCommServer,
         PapercutSmtpServer smtpServer,
