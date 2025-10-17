@@ -22,6 +22,8 @@ using Papercut.Rules.Domain.Rules;
 
 namespace Papercut.Service.Infrastructure.Rules
 {
+    using ILogger = Serilog.ILogger;
+
     public class RuleService : RuleServiceBase,
         IEventHandler<RulesUpdatedEvent>,
         IEventHandler<PapercutClientReadyEvent>,

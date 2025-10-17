@@ -20,6 +20,8 @@ using Papercut.Service.Web;
 
 namespace Papercut.Service.Application.Controllers;
 
+using ILogger = Serilog.ILogger;
+
 [Route("api/[controller]")]
 public class MessagesController(IMessageRepository messageRepository, IMimeMessageLoader messageLoader, ILogger logger)
     : ControllerBase

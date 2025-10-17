@@ -21,6 +21,8 @@ using Papercut.Core.Domain.Settings;
 
 namespace Papercut.Service.Infrastructure.Configuration;
 
+using ILogger = Serilog.ILogger;
+
 /// <summary>
 /// Initializes SmtpServerOptions by merging appsettings.json defaults with persisted settings from legacy Settings.json.
 /// This allows appsettings.json to provide defaults (good for Docker) while Settings.json provides overrides (good for UI changes).
